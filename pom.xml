@@ -1,109 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://maven.apache.org/POM/4.0.0"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-	<groupId>guru.springframework</groupId>
-	<artifactId>spring-core-devops</artifactId>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
+  <groupId>guru.springframework</groupId>
+  <artifactId>spring-core-devops</artifactId>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
 
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-collections4</artifactId>
-			<version>4.1</version>
-		</dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-collections4</artifactId>
+      <version>4.1</version>
+    </dependency>
 
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <scope>runtime</scope>
+    </dependency>
 
-		<!--JMS Dep-->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jms</artifactId>
-		</dependency>
+    <!--JMS Dep-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jms</artifactId>
+    </dependency>
 
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-broker</artifactId>
-		</dependency>
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>activemq-broker</artifactId>
+    </dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
 
-		<dependency>
-			<artifactId>jaxb-api</artifactId>
-			<groupId>javax.xml.bind</groupId>
-			<version>2.3.0</version>
-		</dependency>
-	</dependencies>
-	<packaging>jar</packaging>
+    <dependency>
+      <artifactId>jaxb-api</artifactId>
+      <groupId>javax.xml.bind</groupId>
+      <version>2.3.0</version>
+    </dependency>
+  </dependencies>
+  <packaging>jar</packaging>
 
-	<name>Spring Core DevOps</name>
-	<description>Spring Core DevOps Course</description>
+  <name>Spring Core DevOps</name>
+  <description>Spring Core DevOps Course</description>
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.4.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.3.4.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.8</java.version>
-	</properties>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <project.scm.id>github</project.scm.id>
+  </properties>
 
-	<distributionManagement>
-		<repository>
-			<id>central</id>
-			<name>a0o5c3g5rtp4o-artifactory-primary-0-releases</name>
-			<url>https://craterspace.jfrog.io/artifactory/tut-libs-release-local</url>
-		</repository>
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>a0o5c3g5rtp4o-artifactory-primary-0-releases</name>
+      <url>https://craterspace.jfrog.io/artifactory/tut-libs-release-local</url>
+    </repository>
 
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>a0o5c3g5rtp4o-artifactory-primary-0-snapshots</name>
-			<url>https://craterspace.jfrog.io/artifactory/tut-libs-snapshot-local</url>
-		</snapshotRepository>
-	</distributionManagement>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>a0o5c3g5rtp4o-artifactory-primary-0-snapshots</name>
+      <url>https://craterspace.jfrog.io/artifactory/tut-libs-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
 
-	<version>0.0.4-SNAPSHOT</version>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <scm>
+    <developerConnection>scm:git://github.com/zjayers/spring-core-devops.git</developerConnection>
+    <url>https://github.com/zjayers/spring-core-devops</url>
+  </scm>
+
+  <version>0.0.4-SNAPSHOT</version>
 
 </project>
