@@ -111,11 +111,10 @@
   </build>
 
   <scm>
-    <developerConnection>scm:git://github.com/zjayers/spring-core-devops.git</developerConnection>
+    <developerConnection>scm:git:https://github.com/zjayers/spring-core-devops.git</developerConnection>
     <url>https://github.com/zjayers/spring-core-devops</url>
-    <tag>spring-core-devops-0.0.5</tag>
   </scm>
 
-  <version>0.0.5</version>
+  <version>0.0.5-SNAPSHOT</version>
 
 </project>
