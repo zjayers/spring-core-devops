@@ -114,9 +114,9 @@
     <connection>scm:git:git@github.com:zjayers/spring-core-devops.git</connection>
     <developerConnection>scm:git:git@github.com:zjayers/spring-core-devops.git</developerConnection>
     <url>https://github.com/zjayers/spring-core-devops</url>
-    <tag>spring-core-devops-0.0.2</tag>
+    <tag>HEAD</tag>
   </scm>
 
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
 
 </project>
