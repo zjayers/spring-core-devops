@@ -111,8 +111,8 @@
   </build>
 
   <scm>
-    <connection>scm:git:ssh://git@github.com:zjayers/spring-core-devops.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:zjayers/spring-core-devops.git</developerConnection>
+    <connection>scm:git:git@github.com:zjayers/spring-core-devops.git</connection>
+    <developerConnection>scm:git:git@github.com:zjayers/spring-core-devops.git</developerConnection>
     <url>https://github.com/zjayers/spring-core-devops</url>
     <tag>HEAD</tag>
   </scm>
